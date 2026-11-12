@@ -1,6 +1,7 @@
 import { User } from 'lucide-react';
 import InstallButton from '../components/InstallButton';
 import BmiCard from '../components/BmiCard';
+import AgeGuideCard from '../components/AgeGuideCard';
 
 export default function Profile({ profile, setProfile, onReset, pwa }) {
   const field = 'w-full bg-white border border-slate-100 shadow-sm rounded-2xl px-4 py-3 text-sm outline-none focus:ring-2 ring-primary';
@@ -21,13 +22,15 @@ export default function Profile({ profile, setProfile, onReset, pwa }) {
       <div className="space-y-3">
         <input className={field} placeholder="ชื่อ" value={profile.name} onChange={update('name')} />
         <div className="grid grid-cols-3 gap-3">
-          <input className={field} type="number" placeholder="อายุ" value={profile.age} onChange={update('age')} />
+          <input className={field} type="number" placeholder="อายุ (ปี)" value={profile.age} onChange={update('age')} />
           <input className={field} type="number" placeholder="น้ำหนัก (กก.)" value={profile.weight} onChange={update('weight')} />
           <input className={field} type="number" placeholder="ส่วนสูง (ซม.)" value={profile.height} onChange={update('height')} />
         </div>
       </div>
 
       <BmiCard weight={profile.weight} height={profile.height} />
+
+      <AgeGuideCard age={profile.age} onAgeChange={(age) => setProfile({ ...profile, age })} />
 
       <InstallButton pwa={pwa} className="w-full h-12" label="ดาวน์โหลดแอปลงอุปกรณ์" />
 

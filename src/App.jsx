@@ -48,7 +48,15 @@ export default function App() {
       <Header onProfile={() => setTab('profile')} pwa={pwa} />
       <main className="max-w-6xl mx-auto px-5 sm:px-8 py-6">
         {tab === 'home' && <Home onOpen={setDetail} />}
-        {tab === 'stats' && <Stats history={history} heartRates={heartRates} setHeartRates={setHeartRates} />}
+        {tab === 'stats' && (
+          <Stats
+            history={history}
+            heartRates={heartRates}
+            setHeartRates={setHeartRates}
+            profile={profile}
+            setProfile={setProfile}
+          />
+        )}
         {tab === 'workout' && <WorkoutPage onOpen={setDetail} onStartProgram={startProgram} />}
         {tab === 'profile' && <Profile profile={profile} setProfile={setProfile} onReset={resetAll} pwa={pwa} />}
       </main>

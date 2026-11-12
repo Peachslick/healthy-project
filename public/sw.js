@@ -1,5 +1,5 @@
 // Simple offline-first service worker (app shell + runtime cache)
-const CACHE = 'baanmor-v1';
+const CACHE = 'fiteasy-v2';
 const SHELL = ['/', '/index.html', '/manifest.webmanifest', '/icon.svg', '/icon-maskable.svg'];
 
 self.addEventListener('install', (event) => {

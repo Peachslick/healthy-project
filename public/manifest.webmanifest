@@ -1,7 +1,7 @@
 {
-  "name": "บ้านหม้อแข็งแรง",
-  "short_name": "บ้านหม้อแข็งแรง",
-  "description": "ออกกำลังกายที่บ้าน วันละ 30 นาที",
+  "name": "FitEasy | เริ่มฟิตง่าย ๆ ในแบบคุณ",
+  "short_name": "FitEasy",
+  "description": "ออกกำลังกายที่บ้าน วันละ 30 นาที เริ่มฟิตง่าย ๆ ได้ทุกวัน",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

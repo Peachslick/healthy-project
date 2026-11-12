@@ -9,7 +9,10 @@ export default function Header({ onProfile, pwa }) {
           <div className="w-10 h-10 rounded-xl bg-primary text-white flex items-center justify-center">
             <Activity size={22} />
           </div>
-          <h1 className="text-xl font-bold text-primary">บ้านหม้อแข็งแรง</h1>
+          <div>
+            <h1 className="text-xl font-bold text-primary leading-tight">FitEasy</h1>
+            <p className="text-[11px] text-slate-400 leading-none">เริ่มฟิตง่าย ๆ ได้ทุกวัน</p>
+          </div>
         </div>
         <div className="flex items-center gap-3">
           <InstallButton pwa={pwa} className="text-xs sm:text-sm px-3 sm:px-4 py-2" label="ดาวน์โหลดแอป" />
