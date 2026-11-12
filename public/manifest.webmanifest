@@ -1,0 +1,17 @@
+{
+  "name": "บ้านหม้อแข็งแรง",
+  "short_name": "บ้านหม้อแข็งแรง",
+  "description": "ออกกำลังกายที่บ้าน วันละ 30 นาที",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F8FAFC",
+  "theme_color": "#2563EB",
+  "lang": "th",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icon-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
+
